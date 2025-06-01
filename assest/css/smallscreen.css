@@ -1,0 +1,210 @@
+
+@media (max-width: 767px){
+    /* ================ HEADER SECTION ======================= */
+    nav{
+        display: none;
+        position: fixed;
+        top: 0rem;
+        transition:all 0.8s ease;
+    }
+
+    nav.active{
+    display: block;
+    position: absolute;
+    top: 5.4rem;
+    width: 100%;
+    height: 60vh;
+    transition:all 0.8s ease;
+    background-color: #f6f2ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+
+    .hambuger{
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+     .hambuger .line{
+        display: block;
+        width: 40px;
+        height: 4px;
+        background-color: #34000b;
+        margin-block: 10px;
+        border-radius: 4px;
+        transition: transform 0.5s, opacity 0.25s;
+    }
+
+    .hambuger.active .line:nth-child(1){
+        transform: translateY(15px) rotate(45deg);
+        
+    }
+
+    
+    .hambuger.active .line:nth-child(2){
+        opacity:0;
+        
+    }
+
+    
+    .hambuger.active .line:nth-child(3){
+        transform: translateY(-13px) rotate(-45deg);
+        
+    }
+    /* ================ END HEADER SECTION ======================= */
+    
+    /* ================ HOME SECTION ======================= */
+    .home h1{
+        font-size: 2.3em;
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    .grid-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 200px);
+    width: 90%;
+    margin: 0 auto;
+    scale: 0.8;
+    
+}
+
+.box{
+    width: auto;
+    height: 200px;
+    background-color: var(--background-color-transparent);
+    overflow: hidden;
+}
+.box img{
+    width: 200px;
+}
+.box-1{
+    rotate: 15deg;
+}
+
+.box-2{
+    rotate: 15deg;
+}
+
+.box-3{
+    rotate: 15deg;
+}
+.box-4{
+    rotate: 15deg;
+}
+/* ================ END HOME SECTION ======================= */
+
+/* ================ BLOG SECTION ======================= */
+.blog{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    background-color: #34000b;
+    color: #fff;
+    border-top-left-radius:0% ;
+    border-top-right-radius: 0%;
+}
+
+.blog_circle{
+    position: absolute;
+    top: -6rem;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: -1;
+    background-color: #34000b;
+    border-top-left-radius:50% ;
+    border-top-right-radius: 50%;
+
+}
+
+
+.blog .header_title{
+    z-index: 1;
+    padding: 0.4em;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.blog .card{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    
+}
+
+.blog .card_body{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    border: 1px solid var(--background-color);
+    padding: 10px 5px;
+    border-radius: 10px;
+    
+}
+/* ================ END BLOG SECTION ======================= */
+
+/* ================ CONTACT SECTION ======================= */
+#contact{
+    width: 100%;
+    height: auto;
+    padding: 0 0 20px 0;
+    background-color: var(--primary-color);
+
+}
+
+.contact_title{
+    z-index: 1;
+    padding-top: 3rem;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.contact_vid{
+    display: none;
+    position: relative;
+    width:  50%;
+    height: 70vh;
+    margin-left: 20px;
+    overflow: hidden;
+   border-radius: var(--border-radius);
+    background-color: black;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 10%;
+    margin: 0 auto;
+    gap: 10px;
+    color: white;
+    
+}
+/* ================ END CONTACT SECTION ======================= */
+}
+

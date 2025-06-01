@@ -1,0 +1,223 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The One</title>
+    <link rel="stylesheet" href="assest/css/style.css" />
+    <link rel="stylesheet" href="assest/css/smallscreen.css" />
+    <link rel="stylesheet" href="assest/css/tabscreen.css" />
+  </head>
+  <body>
+    <!-- ============ HEADER SECTION ============ -->
+    <header>
+      <div class="logo">
+        <img class="theo" src="assest/img/THEO.png" alt="theo" />
+        <h1>TheOne</h1>
+      </div>
+      <nav class="nav_active">
+        <a href="index.html" class="nav_link">Home </a>
+        <a href="#" class="nav_link">About </a>
+        <a href="#blog" class="nav_link">Blog </a>
+        <a href="#contact" class="nav_link">Contact </a>
+        <div class="other_links">
+          <a href="" class="activate">Subscribe</a>
+        </div>
+      </nav>
+     <button class="hambuger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+     </button>
+    </header>
+    <!-- ============ END HEADER SECTION ============ -->
+
+    <!-- ============ PATTERN SECTION ============ -->
+    <img src="assest/img/background.png" class="pattern" />
+    <!-- ============ END PATTERN SECTION ============ -->
+
+    <!-- ============ HOME SECTION ============ -->
+    <section class="home">
+      <h1>Welcome to The<span> One </span> &nbsp;Classic Store</h1>
+      <div class="grid-container">
+        <div class="box box-1">
+          <img src="assest/img/hero1.jpg" alt="" />
+        </div>
+        <div class="box box-2">
+          <img src="assest/img/hero2.jpg" alt="" />
+        </div>
+        <div class="box box-3">
+          <img src="assest/img/hero3.jpg" alt="" />
+        </div>
+        <div class="box box-4">
+          <img src="assest/img/hero4.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ============ END HOME SECTION============ -->
+
+    <!-- ============ BLOG SECTION============ -->
+    <main class="home blog" id="blog">
+      <div class="blog_circle" ></div>
+      <div class="header_title" >
+        <h1>Blog</h1>
+        <p>
+          In a world of fast fashion and fleeting trends, building a wardrobe
+          that lasts isn’t just smart (it’s powerful). At TheOne classic store,
+          we believe in curating style that stands the test of time. Whether
+          you're refining your closet or just starting to find your style, these
+          six timeless pieces will always have your back.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card_body">
+          <div class="card_img">
+            <img src="assest/img/striped tshirt.jpg" alt="" />
+          </div>
+          <hr />
+          <div class="card_content">
+            <h3>The Prison striped T-Shirt</h3>
+            <p>
+              The Prison Striped T-Shirt features classic black-and-white
+              stripes with a modern fit perfect for making a statement without
+              saying a word. Made from soft...
+            </p>
+            <button class="btn">
+              <a href="assest/pages/blog_page.html">Read More </a>
+              <ion-icon name="arrow-forward-outline"> </ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="card_body">
+          <div class="card_img">
+            <img src="assest/img/baggy jean.jfif" alt="" />
+          </div>
+          <hr />
+          <div class="card_content">
+            <h3>The Perfect custom Baggy Jeans</h3>
+            <p>
+              The Perfect Custom Baggy Jeans blend laid-back comfort with sharp
+              street-style edge. Designed for movement and attitude, these jeans
+              feature...
+            </p>
+            <button class="btn">
+              <a href="#carousel">Read More </a>
+              <ion-icon name="arrow-forward-outline"> </ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="card_body">
+          <div class="card_img">
+            <img src="assest/img/slide5.jfif" alt="" />
+          </div>
+          <hr />
+          <div class="card_content">
+            <h3>A Timeless Outerwear Layer</h3>
+            <p>
+              This outerwear staple brings structure and style to any
+              look—season after season. With clean lines, a tailored silhouette,
+              and just the right amount of edge...
+            </p>
+            <button class="btn">
+              <a href="#carousel">Read More </a>
+              <ion-icon name="arrow-forward-outline"> </ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="carousel" class="carousel_container">
+        <div class="slide_wrapper">
+          <div class="slider">
+            <img src="assest/img/slide4.jfif" id="slide1" alt="" />
+            <img src="assest/img/slide1.jfif" id="slide2" alt="" />
+            <img src="assest/img/slide2.jpg" id="slide3" alt="" />
+            <img src="assest/img/slide3.jfif" id="slide4" alt="" />
+          </div>
+
+          <div class="slider_link">
+            <a href="#slide1"></a>
+            <a href="#slide2"></a>
+            <a href="#slide3"></a>
+            <a href="#slide4"></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ============ END BLOG SECTION ============ -->
+
+    
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact">
+      <div class="contact_title">
+        <h1>Contact Us</h1>
+        <p>
+          We’re here to help! Whether you have questions about our products,
+          need assistance with an order, or just want to say hello, we’d love to
+          hear from you.
+        </p>
+      </div>
+
+      <div class="contact">
+        <div class="contact_vid">
+          <video src="assest/video/contact.mp4"></video>
+        </div>
+        <form action="">
+          <!-- <h1>Order Now</h1> -->
+          <label for="name">
+            <p>FullName</p>
+            <input type="text" />
+          </label>
+
+          <label for="email">
+            <p>Email</p>
+            <input type="email" />
+          </label>
+
+          <label for="description">
+            <p>Description</p>
+            <textarea name="" id="" rows="6"></textarea>
+          </label>
+          <button type="submit" class="btn"><a href="">Submit</a></button>
+        </form>
+      </div>
+    </section>
+    <!-- ============ END CONTACT SECTION ============ -->
+
+    <!-- ============ FOOTER SECTION ============ -->
+     <Footer>
+       <div class="footer_content">
+        <h3>TheOne Classic Store</h3>
+
+      <div class="footer_links">
+        <a href="">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="">
+          <ion-icon name="logo-linkedIn"></ion-icon>
+        </a>
+      </div>
+       </div>
+     </Footer>
+    <!-- ============ END FOOTER SECTION ============ -->
+
+    <!-- ============ IONIC ICON SECTION ============ -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- ============ END IONIC ICON SECTION ============ -->
+
+    <!-- ============ SCRIPT SECTION ============ -->
+    <script src="assest/js/main.js"></script>
+    <!-- ============ END SCRIPT SECTION ============ -->
+  </body>
+</html>
